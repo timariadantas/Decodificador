@@ -1,0 +1,105 @@
+:root{
+  --cor-botao-back: #dde0ef;
+  --cor-botao-color:#2a013d;
+  --cor-botao-borda: #9299B6;
+  --cor-botao-back-hover:#2a013d ;
+  --cor-botao-color-hover:#ffffff;
+  --cor-caixa:#2a013d;
+}
+.principal {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  margin: 10em;
+  height: 30vh;
+  position: relative;
+  
+}
+.text-area {
+  border: 1px solid var(--cor-botao-borda);
+  opacity: 0.7;
+
+}
+.mensagem {
+  border: 1px solid var(--cor-botao-borda);
+  opacity: 0.7;
+
+}
+.botoes {
+  display: flex;
+  gap: 2em;
+  justify-content: center
+  ;
+
+}
+.btn-criptar {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: var(--cor-botao-back);
+  color: var(--cor-botao-color);
+  border: 1px solid var(--cor-botao-borda);
+  border-radius: 5px;
+  
+
+}
+.btn-criptar:hover {
+  padding: 1em;
+  background-color: var(--cor-botao-back-hover);
+  color: var(--cor-botao-color-hover);
+  border: 1px solid transparent;
+
+}
+.btn-desencriptar {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: var(--cor-botao-back);
+  color: var(--cor-botao-color);
+  border: 1px solid var(--cor-botao-borda);
+  border-radius: 5px;
+
+}
+.btn-desencriptar:hover {
+  padding: 1em;
+  background-color: var(--cor-botao-back-hover);
+  color: var(--cor-botao-color-hover);
+  border: 1px solid transparent;
+
+}
+.btn-copiar {
+  display: block;
+  margin-left: auto;
+  padding: 0.5em;
+  margin-top: 2em;
+  background-color:  var(--cor-botao-back);
+  color: var(--cor-botao-color);
+  border: 1px solid var(--cor-botao-borda);
+  border-radius: 5px;
+
+}
+.btn-copiar:hover {
+  margin-top: 2em;
+  background-color: var(--cor-botao-back-hover);
+  color: var(--cor-botao-color-hover);
+}
+
+@media(max-width:800px){
+  .principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top:5em;
+
+  }
+  .btn-criptar{
+    margin-top: 1em;
+  }
+  .btn-desencriptar{
+    margin-top: 1em;
+
+  }
+  .btn-copiar{
+    margin-top: 1em;
+  }
+}

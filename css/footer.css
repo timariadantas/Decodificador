@@ -1,0 +1,31 @@
+:root{
+  --cor-texto: #5b0484 ;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+.nave-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap:1em;
+
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  color: var(--cor-texto);
+  
+}
+@media(max-width:800px){
+  footer{
+    display: flex;
+    flex-direction: column;
+   }
+}
